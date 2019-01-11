@@ -3,19 +3,84 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Robert E.</title>
+        <title>Robert Evans</title>
         <link rel="shortcut icon" type="image/ico" href="img/igor.ico">
         <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
         <style>
-            
+            header{
+                background-color: rgba(0,0,0,0.7);
+                position:fixed;
+                z-index: 10;
+                top: 0;
+                left: 0;
+                width:100%;
+                color: #fff;
+                padding: 35px 100px 20px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            header a{
+                text-decoration: none;
+                color: white;
+                opacity: 0.6;
+                cursor: pointer;
+            }
+            header a:hover{
+                opacity: 1;
+            }
+            header nav ul{
+                font-size: 14px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+            header nav li{
+                margin: 0 6px;
+            }
+            header nav li:first-child{
+                margin-left: 0;
+            }
+            header nav li:last-child{
+                margin-right: 0;
+            }
+            @media(max-width:1000px){
+                header{
+                    text-align: center;
+                    flex-direction: column;
+                    padding: 20px 50px;
+                }
+                header img{
+                    width: 75%
+                }
+                header nav{
+                    justify-content: space-around;
+                }
+                
+            }
         </style>
     </head>
     <body id="top">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#top">Top</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#getting-around">Projects</a></li>
+                <li><a href="#quotes">Quotes</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#social-media">Links</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ***************************** -->
         <div id = "hero">
             <div class="background-image"></div>
-            <h1>Robert E.</h1>
+            <h1>Robert Evans</h1>
             <h3>Landscapes for Your Viewing Pleasure</h3>
             <a href="https://github.com/robbymister" class="btn" target="_blank">Here's my github.</a>
         </div>
@@ -45,6 +110,46 @@
         </div>
         <hr>
         <!-- ***************************** -->
+        <div id="getting-around">
+            <h3 class="title">Projects</h3>
+            <p>
+            Hey guys, I'm going to list all the projects I've done here with some screenshots and a small description about them.
+            </p>
+            <ul class="grid">
+                <li><i class="fas fa-mobile-alt ico"></i><h4>Mobile Games:</h4><p>I've created a couple apps that are available on the Google Play Store currently. These will be listed soon.</p></li>
+                <li><i class="fas fa-gamepad ico"></i><h4>Computer Games:</h4><p>I have created some simple 2D and 3D computer games made in Unity.</p></li>
+                <li><i class="fas fa-laptop-code ico"></i><h4>Other:</h4><p>Couple other projects that aren't gaming related but perhaps other subjects such as mock websites or small AI.</p></li>
+            </ul>
+        </div>
+        <!-- ***************************** -->
+        <div id="quotes">
+            <hr>
+            <h3 class="title">What Other Are Saying</h3>
+            <p class="portrait"><img src="img/dickens.jpg" alt="Igor Gdula" class="portrait-photos"></p>
+            <p class="quote">&ldquo;The trolley problem keeps me up at night.&rdquo;</p>
+            <p class="author">&mdash; Igor Gdula</p>
+            <p class="portrait"><img src="img/franklin.jpg" alt="Dylan Bryson" class="portrait-photos"></p>
+            <p class="quote">&ldquo;An investment in knowledge yields the best gameplay.&rdquo;</p>
+            <p class="author">&mdash; Dylan Bryson</p>
+            <p class="portrait"><img src="img/leonardo.jpg" alt="Daniel Villeneuve" class="portrait-photos"></p>
+             <p class="quote">&ldquo;Learning never exhausts the mind.&rdquo;</p>
+            <p class="author">&mdash; Daniel Villeneuve</p>
+        <hr>
+        </div>
+        <!-- ***************************** -->
+        <div id="contact">
+            <h3 class="title">My Studio Location</h3>
+            <section class="flexbox-section">
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.3904426310055!2d-79.39768298450198!3d43.660848979121035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34b8940b91b5%3A0x5ff3ee63b4b315a4!2s27+King&#39;s+College+Cir%2C+Toronto%2C+ON+M5S+3K1!5e0!3m2!1sen!2sca!4v1547231193734" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+                <p>27 King's College Cir<br> 
+                Toronto, Ontario, Canada</p>
+            </section>
+        </div>
+        <!-- ***************************** -->
+        <div id="contact-form">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfDW9rdT43BALAG_ef-LuvN1c120KIOgc5Q3sXNYzi0JQMwAQ/viewform?embedded=true" width="100%" height="1250" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        </div>
+        <!-- ***************************** -->
         <footer id="social-media">
             <ul>
                 <li><a href="#" target = "_blank"><i class = "fab fa-twitter-square"></i></a></li>
@@ -53,7 +158,24 @@
                 <li><a href="#" target = "_blank"><i class = "fab fa-pinterest-square"></i></a></li>
             </ul>
             <p>&copy; <script>document.write(new Date().getFullYear())</script> It sure is fun to create websites.</p>
-            <p>&ldquo; Tell me and I forget, teach me and I may remember, involve me and I learn.&rdquo; &mdash;Benjamin Franklin</p>
+            <p>&ldquo; Wow, this website is really cool and well-designed.&rdquo; &mdash;Igor Gdula</p>
         </footer>
+        
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('a[href^="#"]').on('click',function (e) {e.preventDefault();
+
+		var target = this.hash;
+		var $target = $(target);
+
+		$('html, body').stop().animate({
+	        'scrollTop': $target.offset().top-100
+		}, 900, 'swing', function () {
+	        window.location.hash = target-100;
+		});
+	       });
+});
+</script>
+
     </body>
 </html>
