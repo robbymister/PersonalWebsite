@@ -2,8 +2,8 @@ import { Typewriter } from "./typewriter.js";
 
 document.querySelectorAll(".typewriter").forEach((el) => {
   //const strings = JSON.parse(el.dataset.strings);
-  const strings = ["a software developer.", "a fourth-year student at UofT.", "a Chemist.", "an anime watcher (go Attack on Titan!).", 
-  "a video game lover and a UofT CSGO Varsity Team Captain for 2 years.", "the proud owner of 2 lovely cats (see below)!"];
+  const strings = ["a software developer.", "a fourth-year student at UofT.", "a Chemist.", "an anime binge watcher.", 
+  "a video game lover and a UofT CSGO Varsity Team Captain for 2 years.", "the proud owner of 2 lovely cats (see below)!", "a basketball player and Raptors fan!"];
   new Typewriter(el, strings);
 });
 
